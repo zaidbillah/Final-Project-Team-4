@@ -153,13 +153,6 @@ class TestDashboard(unittest.TestCase):
         driver.find_element(By.ID, "saturday").click()
 
 
-
-        # filePath = "C:\Users\rizar\OneDrive\Pictures\download.jfif"
-
-        # driver.find_element(By.CSS_SELECTOR, ".custom-file-input").send_keys(filePath)
-        # driver.execute_script("arguments[0].style.display = 'block';", dataValue)
-        # dataValue.send_keys(filePath)
-        
         time.sleep(4)
 
     
