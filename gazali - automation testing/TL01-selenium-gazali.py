@@ -2,7 +2,8 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 driver = webdriver.Chrome()
-driver.get("https://itera-qa.azurewebsites.net/Login")
+driver.get("https://itera-qa.azurewebsites.net")
+driver.find_element(By.CSS_SELECTOR, "a[href='/Login']").click()
 
 driver.find_element(By.ID,"Username").send_keys("admin")
 driver.find_element(By.ID, "Password").send_keys("admin")
