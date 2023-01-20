@@ -16,6 +16,6 @@ password_field.send_keys(Keys.RETURN)
 
 # Cek kondisi login
 if "https://itera-qa.azurewebsites.net/Dashboard" in driver.current_url:
-    print("Login berhasil, Anda sekarang berada di halaman dashboard")
+    print("passed")
 else:
-    print("Login gagal, pastikan username dan password yang Anda masukkan benar")
+    print("failed")
